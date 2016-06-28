@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.internlft.groceryshoppinglist.DescriptionOfItem">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singlePicture"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/singleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singlePicture"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:padding="10dp"
+        android:text="name"
+        />
+    <TextView
+        android:id="@+id/singleDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleText"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:text="desc"/>
+
+    <TextView
+        android:id="@+id/singlePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleDescription"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:text="price"/>
+
+    <ImageButton
+        android:id="@+id/theCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shopping_cart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="30dp"
+        android:onClick="addToCart"
+         />
+
+
+
+</RelativeLayout>
